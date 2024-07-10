@@ -1,0 +1,28 @@
+{
+    "name": "langchain-llm-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx tsc && tsc-alias",
+        "start": "yarn build && node dist/src/index.js",
+        "dev": "nodemon --ext ts,tsx,json --watch src --exec ts-node -r tsconfig-paths/register src/index.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@langchain/openai": "^0.2.1",
+        "dotenv": "^16.4.5",
+        "langchain": "^0.2.9"
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.10",
+        "nodemon": "^3.1.4",
+        "ts-node": "^10.9.2",
+        "tsc-alias": "^1.8.10",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.5.3"
+    }
+}
